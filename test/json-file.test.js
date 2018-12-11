@@ -4,7 +4,7 @@ const expect = chai.expect;
 
 chai.use(require('chai-json'));
 
-describe.only('try chai plugin: chai-json', () => {
+describe('try chai plugin: chai-json', () => {
     it('package.json is a json file', () => {
         expect(path.join(__dirname, '../package.json')).to.be.a.jsonFile();
     });
