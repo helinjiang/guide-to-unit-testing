@@ -4,7 +4,7 @@ const expect = chai.expect;
 // 扩展
 chai.use(require('../src/chai-plugin-check-qq'));
 
-describe.only('.src/chai-plugin-check-qq', () => {
+describe('.src/chai-plugin-check-qq', () => {
     it('1 is not qq', () => {
         expect(1).to.not.be.a.validQQ;
     });
